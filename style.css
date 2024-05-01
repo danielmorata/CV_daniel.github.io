@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: "Jersey 15", sans-serif;
+}
+body {
+	background: skyblue;
+	/*Añadir foto fondo*/
+}
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px;
+}
+header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo {
+	color: white;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: blueviolet;
+	border-radius: 5px;
+	padding: 0 10px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+header .logo:hover {
+	color: violet;
+	background: white;
+	transition: 2s;
+}
+header .navbar {
+	position: relative;
+	display: flex;
+}
+header .navbar li {
+	list-style: none;
+	margin-left: 30px;
+}
+header .navbar li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	padding: 10px;
+	transition: 0.3s;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+header .navbar li a:hover {
+	border-bottom: 5px solid violet;
+	padding: 2px;
+}
+/*Contenido de la web*/
+.contenido {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 30px;
+}
+.contenido .titulobox {
+	position: relative;
+	max-width: 600px;
+	text-align: center;
+}
+.contenido .titulobox h2 {
+	font-size: 4.5em;
+	text-transform: uppercase;
+	color: white;
+}
+.contenido .titulobox span {
+	background: rosybrown;
+	padding: 0 10px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+	border-radius: 20px;
+}
+.contenido .titulobox p {
+	font-size: 1.8em;
+	line-height: 1.5;
+	color:white;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.contenido .titulobox a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: violet;
+	background: white;
+	padding: 10px 20px;
+	margin: left 30px;
+	border-radius: 20px;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+.contenido .titulobox a:hover {
+	color:white;
+	background: violet;
+	transition: 0.5s;
+}
+.contenido .imgBox {
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: -50px;
+	z-index: -5;
+}
+.contenido .imgBox img {
+	height: 60vh;
+}
+.contenido .imgBox img:hover {
+	height: 60vh;
+}
+/*CopyRight*/
+.copyright{
+	position: absolute;
+	bottom: 0px;
+	left: 800px;
+	margin-bottom: 20px;
+	padding: 0 100px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.copyright p{
+	color: white;
+	text-align: center;
+	margin-left: 100px;
+}
+/*Redes Sociales*/
+.redessociales {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px 30px;
+	list-style: none;
+}
+.redessociales li {
+	padding: 10px;
+}
+.redessociales li a {
+	color: white;
+	font: 2.5em;
+	transition: 0.3s;
+}
+.redessociales li a:hover {
+	color: white;
+	background: violet;
+	transition: 0.5s;
+}
+/*Pagina HTML Formulario*/
+.contenido_formulario .formulario {
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+	align-items: center;
+}
+.contenido_formulario .formulario form {
+	font-size: 2em;
+	text-transform: uppercase;
+	color: white;
+}
+.contenido_formulario .formulario h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 20px;
+}
+.contenido_formulario .formulario label {
+	background: rosybrown;
+	padding: 0 10px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 400;
+	border-radius: 20px;
+	margin-bottom: 60px;
+}
+.contenido_formulario .formulario input {
+	font-size: 1em;
+	line-height: 1.5;
+	color:black;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 300;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+.contenido_formulario .formulario button {
+	font-size: 0.8em;
+	line-height: 1.5;
+	color:black;
+	font-weight: 300;
+	margin-bottom: 20px;
+	margin-right: 40px;
+	border-radius: 30px;
+}
+/*Pagina HTML CV*/
+.contenido_cv .cv{
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+	align-items: center;
+}
+.contenido_cv .cv h1{
+	font-size: 4em;
+	text-transform: uppercase;
+	color: black;
+}
+.contenido_cv .cv h2 {
+	font-size: 3.5em;
+	text-transform: uppercase;
+	color: blue;
+	margin-bottom: 20px;
+}
+.contenido_cv .cv h3 {
+	font-size: 2em;
+	font-weight: 400;
+	color: darkblue;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.contenido_cv .cv p {
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: purple;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+/*Pagina HTML Proyectos*/
+.contenido_proyectos .proyectos{
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+	align-items: center;
+}
+.contenido_proyectos .proyectos h1{
+	font-size: 3.5em;
+	text-transform: uppercase;
+	color: black;
+}
+.contenido_proyectos .proyectos h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+	color: grey;
+	margin-bottom: 10px;
+}
+.contenido_proyectos .proyectos p {
+	font-size: 1em;
+	line-height: 1.5;
+	color: darkgrey;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
